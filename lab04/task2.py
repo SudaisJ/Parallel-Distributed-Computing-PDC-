@@ -9,7 +9,6 @@ data = rank
 #   MPI.SUM & MPI.PROD
 
 total_sum = comm.reduce(data, op=MPI.SUM, root=0)
-
 total_prod = comm.reduce(data, op=MPI.PROD, root=0)
 
 if rank == 0:

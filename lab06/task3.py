@@ -13,3 +13,4 @@ if rank == 0:
     median_revenue = np.median(all_revenues)
     print(f"All revenues: {all_revenues}")
     print(f"Median revenue among branches: ${median_revenue}")
+    

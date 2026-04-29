@@ -4,7 +4,7 @@ comm = MPI.COMM_WORLD
 rank = comm.Get_rank()
 size = comm.Get_size()
 
-local_data = [20.0 + rank, 50.0 + rank, 5.0 + rank]
+local_data = [20.0 , 50.0 , 5.0]
 
 max_vals = comm.reduce(local_data, op=MPI.MAX, root=0)
 sum_vals = comm.reduce(local_data, op=MPI.SUM, root=0)
